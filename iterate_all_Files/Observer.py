@@ -18,9 +18,9 @@ class Observer:
             # Update existing entry
             if filename in self.files_dict:
                 self.files_dict[filename].append([(self.obsvr_tuple(filename, [filepath]))])
+            
             # Add new
             else:
-            
                 self.files_dict[filename] = [(self.obsvr_tuple(filename, [filepath]))]
         else:
             pass
